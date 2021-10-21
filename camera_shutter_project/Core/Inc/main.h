@@ -62,6 +62,10 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define JMPR0_Pin GPIO_PIN_0
 #define JMPR0_GPIO_Port GPIOA
+#define Vbat_switched_gpio_Pin GPIO_PIN_6
+#define Vbat_switched_gpio_GPIO_Port GPIOA
+#define Vusb_gpio_Pin GPIO_PIN_0
+#define Vusb_gpio_GPIO_Port GPIOB
 #define RCVR_Pin GPIO_PIN_15
 #define RCVR_GPIO_Port GPIOA
 #define actuator_power_Pin GPIO_PIN_5
