@@ -37,7 +37,11 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+extern ADC_HandleTypeDef hadc2;
+extern TIM_HandleTypeDef htim1;
+extern TIM_HandleTypeDef htim2;
+extern TIM_HandleTypeDef htim3;
+extern TIM_HandleTypeDef htim8;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -64,10 +68,13 @@ void Error_Handler(void);
 #define JMPR0_GPIO_Port GPIOA
 #define Vbat_switched_gpio_Pin GPIO_PIN_6
 #define Vbat_switched_gpio_GPIO_Port GPIOA
+#define PWM_Pin GPIO_PIN_7
+#define PWM_GPIO_Port GPIOA
 #define Vusb_gpio_Pin GPIO_PIN_0
 #define Vusb_gpio_GPIO_Port GPIOB
 #define RCVR_Pin GPIO_PIN_15
 #define RCVR_GPIO_Port GPIOA
+#define RCVR_EXTI_IRQn EXTI15_10_IRQn
 #define actuator_power_Pin GPIO_PIN_5
 #define actuator_power_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
