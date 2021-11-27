@@ -11,11 +11,13 @@
 #define SERVO_RANGE_US  1500
 
 void ServoEnablePower() {
+  HAL_TIM_PWM_Start(&htim17, TIM_CHANNEL_1);
   HAL_GPIO_WritePin(SERVO_PWR_GPIO_Port, SERVO_PWR_Pin, GPIO_PIN_SET);
 }
 
 void ServoDisablePower() {
   HAL_GPIO_WritePin(SERVO_PWR_GPIO_Port, SERVO_PWR_Pin, GPIO_PIN_RESET);
+  HAL_TIM_PWM_Stop(&htim17, TIM_CHANNEL_1);
 }
 
 void ServoSetPosition(float position) {
