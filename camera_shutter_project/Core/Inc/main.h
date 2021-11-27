@@ -37,11 +37,11 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
+extern ADC_HandleTypeDef hadc1;
 extern ADC_HandleTypeDef hadc2;
 extern TIM_HandleTypeDef htim1;
 extern TIM_HandleTypeDef htim2;
-extern TIM_HandleTypeDef htim3;
-extern TIM_HandleTypeDef htim8;
+extern TIM_HandleTypeDef htim17;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -66,17 +66,24 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define JMPR0_Pin GPIO_PIN_0
 #define JMPR0_GPIO_Port GPIOA
-#define Vbat_switched_gpio_Pin GPIO_PIN_6
-#define Vbat_switched_gpio_GPIO_Port GPIOA
-#define PWM_Pin GPIO_PIN_7
-#define PWM_GPIO_Port GPIOA
-#define Vusb_gpio_Pin GPIO_PIN_0
-#define Vusb_gpio_GPIO_Port GPIOB
+#define LED_G_Pin GPIO_PIN_4
+#define LED_G_GPIO_Port GPIOA
+#define LED_R_Pin GPIO_PIN_5
+#define LED_R_GPIO_Port GPIOA
+#define Vbat_switched_Pin GPIO_PIN_6
+#define Vbat_switched_GPIO_Port GPIOA
+#define SERVO_PWM_Pin GPIO_PIN_7
+#define SERVO_PWM_GPIO_Port GPIOA
+#define Vusb_Pin GPIO_PIN_0
+#define Vusb_GPIO_Port GPIOB
 #define RCVR_Pin GPIO_PIN_15
 #define RCVR_GPIO_Port GPIOA
 #define RCVR_EXTI_IRQn EXTI15_10_IRQn
-#define actuator_power_Pin GPIO_PIN_5
-#define actuator_power_GPIO_Port GPIOB
+#define SERVO_PWR_Pin GPIO_PIN_5
+#define SERVO_PWR_GPIO_Port GPIOB
+#define BTN0_Pin GPIO_PIN_8
+#define BTN0_GPIO_Port GPIOB
+#define BTN0_EXTI_IRQn EXTI9_5_IRQn
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
