@@ -1,5 +1,5 @@
 # General instructions
-![img](./imgs/IMG_E0556.jpg)
+<img src="./imgs/IMG_E0556.jpg" alt="programmer1" width="1000"/>
 
 ## Taking a picture
 Pushing the shutter button will cause the servo to move through its full range of motion and then back. Pushing the button on the remote will do the same thing after a `3 second` delay. The green `General Status LED` will flash 3 times during the 3 second countdown. It will turn off while the servo is being moved.
