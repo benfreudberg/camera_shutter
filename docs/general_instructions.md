@@ -1,8 +1,10 @@
 # General instructions
 ![img](./imgs/IMG_E0556.JPG)
 
-## Taking a picture
+## Servo Control
 Pushing the shutter button will cause the servo to move through its full range of motion and then back. Pushing the button on the remote will do the same thing after a `3 second` delay. The green `General Status LED` will flash 3 times during the 3 second countdown. It will turn off while the servo is being moved.
+
+If this servo does not have enough torque to actuate the camera's shutter, a larger one can be swapped in. The only limit will be if the current draw of a larger servo overwhelms what the battery is capable of putting out. A larger battery could be swapped in if necessary.
 
 ## IR Sensor Sensitivity
 The sensor will have the best range if it is shielded from direct sunlight. In direct sunlight, it will only have a range of a few feet. Outside on a bright day where the sensor is not in direct sunlight, the range is about 20 feet. Indoors, the range is very far.
